@@ -1,9 +1,10 @@
 import Profile from './Profile/Profile';
-// import Statistics from './Statistics/Statistics';
+import Statistics from './Statistics/Statistics';
 // import FriendList from './FriendList/FriendList';
 // import TransactionHistory from './TransactionHistory/TransactionHistory';
 
-import user from '../inputs/user.json';
+import user from '../data/user.json';
+import data from '../data/data.json';
 
 import PropTypes from 'prop-types';
 
@@ -21,9 +22,9 @@ const App = () => {
         views={stats.views}
         likes={stats.likes}
       />
-      {/* <Statistics />
-      <FriendList />
-      <TransactionHistory /> */}
+      <Statistics title="Upload stats" stats={data} />
+      {/* <FriendList />
+      <TransactionHistory />  */}
     </>
   );
 };

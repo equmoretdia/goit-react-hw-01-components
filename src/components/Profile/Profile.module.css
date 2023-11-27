@@ -1,27 +1,71 @@
 .profile {
-  display: block;
+  max-width: 300px;
+  margin: 0 auto 60px;
+  font-weight: 700;
+  background-color: #fdfdfd;
+  border-radius: 16px;
 }
+
 .description {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #dedede;
+  border-bottom: none;
+  border-radius: 16px 16px 0 0;
 }
+
 .avatar {
   display: block;
+  width: 200px;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
 }
+
 .name {
-  display: block;
+  padding-top: 10px;
+  font-size: 28px;
+  color: #343434;
 }
+
 .tag {
-  display: block;
+  color: #ababab;
 }
+
 .location {
-  display: block;
+  font-size: 18px;
+  color: #ababab;
 }
+
 .stats {
-  display: block;
+  display: flex;
+  align-items: center;
 }
+
+.statItem {
+  padding: 15px;
+  flex-basis: calc(100% / 3);
+  text-align: center;
+  border: 1px solid #dedede;
+  background-color: #efefff;
+}
+
+.statItem:first-child {
+  border-radius: 0 0 0 16px;
+}
+
+.statItem:last-child {
+  border-radius: 0 0 16px 0;
+}
+
 .label {
   display: block;
+  margin-bottom: 5px;
+  color: #ababab;
 }
+
 .quantity {
-  display: block;
+  color: #343434;
 }

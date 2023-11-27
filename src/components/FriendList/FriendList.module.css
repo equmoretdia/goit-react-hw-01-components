@@ -1,18 +1,36 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+  margin: 0 auto 60px;
+  font-weight: 700;
+}
+
 .item {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #fdfdfd;
+  border: 1px solid #dedede;
+  border-radius: 16px;
 }
 .status {
-  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 .online {
-  display: block;
+  background-color: #248f27;
 }
 .offline {
-  display: block;
+  background-color: #e20e0e;
 }
 .avatar {
   display: block;
 }
 .name {
-  display: block;
+  font-size: 28px;
+  color: #343434;
 }

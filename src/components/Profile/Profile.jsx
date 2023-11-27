@@ -13,17 +13,19 @@ const Profile = ({ user }) => {
       </div>
 
       <ul className={css.stats}>
-        <li>
+        <li className={css.statItem}>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{stats.followers}</span>
+          <span className={css.quantity}>
+            {stats.followers.toLocaleString()}
+          </span>
         </li>
-        <li>
+        <li className={css.statItem}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{stats.views}</span>
+          <span className={css.quantity}>{stats.views.toLocaleString()}</span>
         </li>
-        <li>
+        <li className={css.statItem}>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{stats.likes}</span>
+          <span className={css.quantity}>{stats.likes.toLocaleString()}</span>
         </li>
       </ul>
     </div>

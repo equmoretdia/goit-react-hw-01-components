@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #fdfdfd;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.online {
+  background-color: #248f27;
+}
+.offline {
+  background-color: #e20e0e;
+}
+.avatar {
+  display: block;
+}
+.name {
+  font-size: 28px;
+  color: #343434;
+}
